@@ -1,5 +1,5 @@
 <link rel = "stylesheet" type = "text/css" href = "<?=base_url();?>assets/css/bootstrap.css">
-
+<link href="<?=base_url();?>assets/favicon/favicon.ico" rel="icon" type="image/x-icon" />
 
 
 <title>SMYL</title>
