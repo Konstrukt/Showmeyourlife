@@ -1,3 +1,9 @@
-Showmeyourlife
+ShowMeYourLife
 ==============
-Meine eigene kleine Welt. Dient lediglich zum üben. Für Codevorschläge wäre ich sehr dankbar.
+### About the project..
+
+Mein kleines Projekt. Dient lediglich zum Üben.
+
+### Libraries
+
+Ion Auth2
