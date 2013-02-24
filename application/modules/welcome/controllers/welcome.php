@@ -35,4 +35,11 @@ class Welcome extends CI_Controller
 		redirect("welcome","refresh");
 		}
 	}
+	
+	function post()
+	{
+		$this->load->model("welcome_model");
+		$this->welcome_model->posting();
+		redirect('welcome','refresh');
+	}
 }
