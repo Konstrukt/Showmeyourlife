@@ -2,7 +2,7 @@
 
 
 
-
+<title>SMYL</title>
 <!--CSS für Welcome / Wird später separat-->
 <style type = "text/css">
 #home
