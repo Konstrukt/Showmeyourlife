@@ -4,6 +4,7 @@ class Welcome extends CI_Controller
 {
 	function index()
 	{
-		$this->load->view("welcome_view");
+		$data['container'] = $this->load->view("container");
+		$this->load->view("welcome_view", $data);
 	}
 }
