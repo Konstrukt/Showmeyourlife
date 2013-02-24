@@ -3,6 +3,8 @@
 		<h3>Willkommen!</h3>
 		<?php echo $user->username;?>
 		<br>
+		<a href = "auth/login">Logout</a>
+		<br>
 		<img src="<?=base_url();?>assets/pics/ava.jpg" class="img-polaroid" style = "width:150px">
 		
 <!--Avatar hochladen-->
