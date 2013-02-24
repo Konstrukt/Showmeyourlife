@@ -9,4 +9,10 @@
 {
 	text-align:center;
 }
+#login
+{
+	position:relative;
+	top:50px;
+	text-align:center;
+}
 </style>

@@ -52,6 +52,7 @@ class Auth extends CI_Controller {
 	//log the user in
 	function login()
 	{
+		$this->data['container'] = $this->load->view('container');
 		$this->data['title'] = "Login";
 
 		//validate form input
