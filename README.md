@@ -11,3 +11,7 @@ Ion Auth2
 ### ToDo
 Avatar dynamisch machen.
 Optimierung des Codes.
+
+### Fragen?
+-------
+E-Mail: konstantin.schmidt.dev@gmail.com
