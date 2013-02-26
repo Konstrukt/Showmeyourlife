@@ -18,7 +18,8 @@
 <!--Input-->
 <?php echo form_open('welcome/post');?>
 <input type = "text" name = "posting" placeholder = "Deine Nachricht...">
-<input type = "submit" value = "Posten!" class = "btn">
+<br>
+<input type = "submit" value = "Posten!" class = "btn btn-info">
 </form>
 <!--INPUT END-->
 </div>

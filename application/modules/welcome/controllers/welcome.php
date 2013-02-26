@@ -4,11 +4,16 @@ class Welcome extends CI_Controller
 {
 	function index()
 	{
+	if (!$this->ion_auth->logged_in())
+		{
+		redirect("auth","refresh");
+		}else{
 		$this->load->model("welcome_model");
 		$data['get']		= $this->welcome_model->get();
 		$data['user']		= $this->ion_auth->user()->row();
 		$data['container']	= $this->load->view("container");
 		$this->load->view("welcome_view", $data);
+		}
 	}
 	function ava()
 	{
