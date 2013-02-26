@@ -20,5 +20,22 @@
 <input type = "text" name = "posting" placeholder = "Deine Nachricht...">
 <input type = "submit" value = "Posten!" class = "btn">
 </form>
-	</div>
+<!--INPUT END-->
 </div>
+</div>
+<!--GET-->
+<?php
+if(isset($get))
+{
+	foreach($get as $ausgabe)
+	{
+		echo "<div class = 'well'>";
+		echo "From: ".$ausgabe->name."<br>";
+		
+		echo $ausgabe->post."<br></div>";
+		
+	}
+}
+?>
+<!--GET END-->
+	</div>
