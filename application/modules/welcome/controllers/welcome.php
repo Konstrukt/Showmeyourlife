@@ -17,9 +17,10 @@ class Welcome extends CI_Controller
 	}
 	function ava()
 	{
+		$user = $this->ion_auth->user()->row();
 		$config['upload_path'] = './assets/pics/';
 		$config['allowed_types'] = 'jpg';
-		$config['file_name'] = 'ava';
+		$config['file_name'] = $user->username;
 		$config['overwrite'] = TRUE;
 		
 		$this->load->library('upload', $config);
