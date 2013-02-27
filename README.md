@@ -8,6 +8,10 @@ Mein kleines Projekt. Dient lediglich zum Üben.
 
 Ion Auth2
 
+### Login?
+E-Mail: admin@admin.com
+Password: password
+
 ### Fragen?
 -------
 E-Mail: konstantin.schmidt.dev@gmail.com
