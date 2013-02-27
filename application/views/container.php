@@ -16,3 +16,15 @@
 	text-align:center;
 }
 </style>
+
+<script type="text/javascript">    
+    function evalKeyForSubmit(event, frm) {  
+      
+       if (event && event.which == 13)
+          frm.Submit.value=escape(frm.potng.value)  
+          frm.action='go.asp'  
+          frm.submit();  
+       else  
+          return true;  
+    }  
+</script>  

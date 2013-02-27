@@ -17,9 +17,10 @@
 
 <!--Input-->
 <?php echo form_open('welcome/post');?>
-<input type = "text" name = "posting" placeholder = "Deine Nachricht...">
-<br>
-<input type = "submit" value = "Posten!" class = "btn btn-info">
+<input id="txtEingabe" name="posting" type="text"  
+         onkeypress="return evalKeyForSubmit(event, this.form);" placeholder = "Enter dr&uuml;cken um zu posten...">  
+   </p>  
+   <input type="hidden" id="Submit" name="Submit" value="">  
 </form>
 <!--INPUT END-->
 </div>
