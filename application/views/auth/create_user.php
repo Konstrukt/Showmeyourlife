@@ -1,6 +1,5 @@
-<h1>Create User</h1>
-<p>Please enter the users information below.</p>
-
+<div id = "reg">
+<h1>Registrieren</h1>
 <div id="infoMessage"><?php echo $message;?></div>
 
 <?php echo form_open("auth/create_user");?>
@@ -16,18 +15,8 @@
       </p>
 
       <p>
-            Company Name: <br />
-            <?php echo form_input($company);?>
-      </p>
-
-      <p>
             Email: <br />
             <?php echo form_input($email);?>
-      </p>
-
-      <p>
-            Phone: <br />
-            <?php echo form_input($phone1);?>-<?php echo form_input($phone2);?>-<?php echo form_input($phone3);?>
       </p>
 
       <p>
@@ -41,6 +30,7 @@
       </p>
 
 
-      <p><?php echo form_submit('submit', 'Create User');?></p>
+      <input type = "submit" value = "Registrieren!" class = "btn btn-danger">
 
 <?php echo form_close();?>
+</div>

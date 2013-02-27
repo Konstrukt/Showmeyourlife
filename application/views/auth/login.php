@@ -16,6 +16,8 @@
 
 
  <p><input type = "submit" value = "Login!" class = "btn btn-primary btn-large"></p>
+ <p>oder</p>
+ <a href = "create_user" class = "btn btn-warning btn-large">Registrieren</a>
 
 <?php echo form_close();?>
 </div>

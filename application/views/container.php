@@ -15,6 +15,12 @@
 	top:50px;
 	text-align:center;
 }
+#reg
+{
+	position:relative;
+	top:50px;
+	text-align:center;
+}
 </style>
 
 <script type="text/javascript">    
