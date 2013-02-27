@@ -64,7 +64,7 @@ $autoload['libraries'] = array('database','ion_auth','session','form_validation'
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('url', 'form', 'file');
+$autoload['helper'] = array('url', 'form', 'file','language');
 
 
 /*
@@ -109,7 +109,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array();
+$autoload['model'] = array('welcome_model');
 
 
 /* End of file autoload.php */
