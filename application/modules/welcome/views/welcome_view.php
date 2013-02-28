@@ -1,34 +1,17 @@
-<script>
-function isEnterPressed(e){
-var keycode=null;
-if (e!=null){
-	if (window.event!=undefined){
-		if (window.event.keyCode) keycode = window.event.keyCode;
-		else if (window.event.charCode) keycode = window.event.charCode;
-	}else{
-		keycode = e.keyCode;
-	}
-}
-return (keycode == 13);}
-</script>
-<div class = "nav">
+<div id = "home">
 	<div class = "hero-unit">
 		<h2>Welcome</h2>
-		   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">  
-                  Avatar upload!
-                </a> <br>
+		   <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">Avatar upload!</a><br>
 			<!--Avatar-->
-<img src="<?=base_url();?>assets/pics/<?php echo $user->first_name;?>.jpg" class="img-polaroid" style = "width:150px">
+<img src="<?=base_url();?>assets/pics/<?php echo $user->first_name;?>.jpg" class="img-polaroid" style = "width:150px"><br>
 			<!--Bgrüssung-->
-			<?php echo "Hallo " . $user->first_name . ".";?>
+<?php echo "Hallo " . $user->first_name . ".";?><br>
 			<!--Logout-->
-			<small><a href = "auth/logout">Logout</a></small>
+<small><a href = "auth/logout">Logout</a></small>
 			<!--Post-->
-			<?php echo form_open('welcome/post_insert');?>
-
-<input type="text" name = "post" onkeyup="if(isEnterPressed(event)){}" placeholder = "Press ENTER to Submit!" />
-			</form>
-			
+	<?php echo form_open('welcome/post_insert');?>
+<input id="txtEingabe" name="posting" type="text" onkeypress="return evalKeyForSubmit(event, this.form);" placeholder = "Enter dr&uuml;cken um zu posten...">
+	</form>	
 			<!--Ava-Upload-->
            <div id="collapseOne" class="accordion-body collapse" style="height: 0px; ">  
                 <div class="accordion-inner">  
@@ -38,13 +21,9 @@ return (keycode == 13);}
 			</form>
                 </div>  
               </div>  
-			<hr>
-		
+			<hr>		
 	</div>
-
-
-
-
+</div>	
 <?php
 if(isset($post)){
 foreach($post as $get_post)
@@ -66,7 +45,3 @@ echo "<h5>".$get_post->post."</h5>";
 }
 ?>
 </div>
- 
-   <script type="text/javascript" src="<?=base_url();?>assets/js/bootstrap.js"></script> 
-   <script type="text/javascript" src="<?=base_url();?>assets/js/bootstrap-collapse.js"></script>
- 
