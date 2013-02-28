@@ -12,6 +12,26 @@
 {
 	text-align:center;
 }
+#status
+{
+position: relative;
+width: 200px;
+height: 150px;
+top: 50%;
+left: 50%;
+margin-top: 0px;
+margin-left: -100px;
+}
+#input
+{
+position: relative;
+width: 200px;
+height: 150px;
+top: 50%;
+left: 50%;
+margin-top: -70px;
+margin-left: -100px;
+}
 #login
 {
 	position:relative;

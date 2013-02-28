@@ -15,6 +15,22 @@
 </form>
 <!--Avatar hochladen ENDE-->
 
+<div id = "status">
+Rang
+<?php
+if(isset($get)){
+foreach($get as $get_count){
+//$get_count->id * 10;
+}
+}
+?>
+<div class="progress progress-striped active"style="width:200px;">
+<div class="bar" style="width:<?php echo $get_count->id;?>%;">
+</div>
+</div>
+</div>
+
+<div id = "input">
 <!--Input-->
 <?php echo form_open('welcome/post');?>
 <input id="txtEingabe" name="posting" type="text"  
