@@ -1,3 +1,4 @@
+<script type="text/javascript" src="<?=base_url();?>assets/js/bootstrap-collapse.js"></script>
 <div id = "home">
 	<div class = "hero-unit">
 		<h2>Welcome</h2>
